@@ -1,0 +1,40 @@
+# Exclude proprietary application source code
+app/
+.agents/
+docs/
+.github/
+
+# Keystore and Secrets
+keystore/
+keystore.properties
+*.jks
+*.keystore
+*.key
+*.pem
+*.p12
+
+# Build outputs and Android SDK configs
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+*.idsig
+
+# Gradle wrapper & build scripts
+gradle/
+gradlew
+gradlew.bat
+build.gradle.kts
+settings.gradle.kts
+gradle.properties
+
+# IDE & Runtime logs
+.idea/
+.kotlin/
+*.iml
+*.log
+hs_err_*
+replay_*
+.DS_Store
+Thumbs.db
