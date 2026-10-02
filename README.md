@@ -58,7 +58,7 @@ Follow these steps to set up and connect vBook Link to your reading application.
 1. Open **vBook Link**.
 2. Tap the **Power** button on the home screen to start the server.
 3. Verify that the server status indicates **Running**.
-4. Tap the **OPDS** URL card to copy the local catalog link (default: `http://127.0.0.1:8080/opds`).
+4. Tap the **OPDS** URL card to copy the local catalog link (default: `http://127.0.0.1:8686/opds`).
 
 ### Step 3: Add your book sources
 You can connect Google Drive collections using either of the following methods:
@@ -68,7 +68,7 @@ You can connect Google Drive collections using either of the following methods:
 ### Step 4: Connect with vBook
 1. Open the **vBook** reading application.
 2. Navigate to **OPDS Bookshelf** > **Add Catalog**.
-3. Enter a title (for example, `My Local Library`) and paste the copied URL (`http://127.0.0.1:8080/opds`).
+3. Enter a title (for example, `My Local Library`) and paste the copied URL (`http://127.0.0.1:8686/opds`).
 4. Save the entry, open your catalog, and select any title to download and read.
 
 ---
@@ -99,7 +99,7 @@ vBook Link is engineered with a strict **Local-First** design:
 | **Minimum Android Version** | Android 8.0 (API 26) |
 | **Target Android Version** | Android 14 (API 34) |
 | **Engine Framework** | Kotlin 2.0 / Jetpack Compose / Ktor CIO 2.3.12 |
-| **Default Server Port** | `8080` (Configurable in Settings) |
+| **Default Server Port** | `8686` (Configurable in Settings) |
 | **Signature Schemes** | APK Signature Scheme v1, v2, and v3 |
 
 ---
@@ -113,8 +113,8 @@ vBook Link is engineered with a strict **Local-First** design:
 ### Server Connection Failed
 - If vBook displays a connection timeout error, ensure that:
   1. The server switch inside vBook Link is turned **ON**.
-  2. The address is entered exactly as shown on the home screen (`http://127.0.0.1:8080/opds`).
-  3. If another service occupies port 8080, open **Settings** inside vBook Link and assign an alternate port (such as `8686`).
+  2. The address is entered exactly as shown on the home screen (`http://127.0.0.1:8686/opds`).
+  3. If another service occupies port 8686, vBook Link automatically triggers auto-recovery port fallback (+1, +2). You can also open **Settings** inside vBook Link and assign an alternate port manually.
 
 ---
 
