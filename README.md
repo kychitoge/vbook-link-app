@@ -6,7 +6,7 @@
 
 **A lightweight, local-first OPDS and WebDAV catalog server for the vBook reading ecosystem on Android.**
 
-[![Release](https://img.shields.io/badge/Release-v1.1.0-blue.svg)](https://github.com/kychitoge/vbook-link-app/releases)
+[![Release](https://img.shields.io/badge/Release-v1.2.0-blue.svg)](https://github.com/kychitoge/vbook-link-app/releases)
 [![Android](https://img.shields.io/badge/Android-8.0%2B%20(API%2026%2B)-green.svg)](https://developer.android.com)
 [![Architecture](https://img.shields.io/badge/Architecture-Local--First%20%7C%20Zero--Cloud-orange.svg)](#architecture-and-privacy)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
@@ -32,6 +32,7 @@ By delivering feeds locally over the loopback network (`127.0.0.1`), vBook Link 
 - **On-Demand Hierarchical VFS**: Loads folders instantly without deep-scan delays. Browse large directory structures smoothly with sub-second response times.
 - **Reliable Foreground Service**: Keeps the local Ktor server active while you read in vBook, preventing background process termination by the operating system.
 - **Private by Design (BYOK)**: Supports Bring Your Own Key for Google Drive access. Your keys and catalog data remain strictly on your local device.
+- **Backup and Device Transfer**: Easily back up and restore your catalog sources and preferences using standard open JSON files. Move your library to new phones or E-ink devices in seconds with zero cloud intermediaries.
 
 ---
 
@@ -51,7 +52,7 @@ Follow these steps to set up and connect vBook Link to your reading application.
 
 ### Step 1: Install the application
 1. Go to the [Releases](https://github.com/kychitoge/vbook-link-app/releases) page.
-2. Download the latest `vBookLink-v1.1.0-release.apk` package.
+2. Download the latest `vBookLink-v1.2.0-release.apk` package.
 3. Open the downloaded file on your Android device and confirm installation.
 
 ### Step 2: Start the local server
